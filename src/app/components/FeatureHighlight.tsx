@@ -7,23 +7,26 @@ type FeatureHighlightProps = {
   text: string;
 };
 
-export default function FeatureHighlight({highlightURL, header, text}: FeatureHighlightProps) {
+export default function FeatureHighlight({
+  highlightURL,
+  header,
+  text,
+}: FeatureHighlightProps) {
   return (
     <>
-      <div className="w-full flex justify-around items-center mb-[4rem]">
-        <Image
-          src={highlightURL}
-          alt="features"
-          width={300}
-          height={300}
-          className="object-contain"
-        />
+      <div className="w-full flex justify-between items-center mb-[4%] p-8 relative ">
+        <div className="p-8 relative">
+          <div className="absolute z-10 w-full h-full rounded-xl top-0 left-0 bg-gradient-to-t from-[#1a1a1a]/80 to-[#1a1a1a]/10 blur-sm p-6"></div>
 
-        <div className="flex flex-col gap-8 w-[45%]">
-          <h3>{header}</h3>
-          <p className="text-[0.8rem]">{text}</p>
+          <Image
+            src={highlightURL}
+            alt="features"
+            width={600}
+            height={600}
+            className="rounded-2xl "
+          />
         </div>
       </div>
     </>
-  )
+  );
 }

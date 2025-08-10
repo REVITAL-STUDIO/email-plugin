@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Hero () {
     return (
-        <section className="tracking-widest uppercase">
-            <div className="mt-52  text-white">
+        <section className="tracking-widest uppercase pb-8 pl-8 flex flex-col mt-[10%]">
+            <div className="text-white">
                 <h1 className="text-3xl xl:text-6xl">Supercharge your inbox</h1>
                 <p className="mt-8 xl:mt-12 text-sm ">Organize, secure, and streamline your legal inbox effortlessly.</p>
             </div>

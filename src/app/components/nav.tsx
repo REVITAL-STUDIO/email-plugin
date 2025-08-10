@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Nav() {
     return (
-       <section className=" flex justify-between">
+       <section className=" flex justify-between pt-8 px-8">
             <Link href="/" className="z-40">
                 <Image
                 src="/lawbox.png"
@@ -14,7 +14,7 @@ export default function Nav() {
                 className=" w-full h-full object-contain"
                 />
             </Link>
-            <div className="p-4 hidden xl:block">
+            <div className="p-4 hidden lg:block">
                 <ul className="flex gap-x-8 text-white uppercase text-xs tracking-widest">
                     <Link href="/">About</Link>
                     <Link href="/">Features</Link>

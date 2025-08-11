@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="tracking-widest min-h-screen  flex flex-col">
-      <div className="text-white mt-[10%] mb-[2%] pb-8 pl-8 ">
-        <h1 className="text-3xl xl:text-6xl uppercase">
-          Supercharge your inbox
+    <section className="tracking-widest min-h-screen  flex flex-col p-8">
+      <div className="text-white mt-[6%] mb-[2%]  text-center">
+        <h1 className="text-3xl xl:text-6xl uppercase relative flex justify-center items-center">
+          Supercharge your inbox{" "}
         </h1>
         <p className="mt-8 xl:mt-12 text-base ">
           Organize, secure, and streamline your legal inbox effortlessly.

@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import { Pathway_Extreme } from "next/font/google";
 import Features from "./components/Features";
 import CTABanner from "./components/CTABanner";
+import Electric from "./components/electric";
 
 const pathwayExtreme = Pathway_Extreme({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ export default function Home() {
     <section
       className={`bg-[#1a1a1a] min-h-screen ${pathwayExtreme.className}`}
     >
+      <Electric />
       <Nav />
       <Hero />
       <CTABanner />

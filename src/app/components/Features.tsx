@@ -28,15 +28,15 @@ const features = [
 export default function Features() {
   return (
     <div className="w-full text-white text-3xl flex flex-col">
-      <div className="flex gap-6 text-right relative ml-auto mr-[3rem] mt-[4rem]">
+      <div className="flex flex-col gap-6 text-center relative mx-auto  mt-[4rem]">
         <Image
           src="/featurelogo.png"
           alt="features"
           width={100}
           height={100}
-          className="object-contain"
+          className="object-contain mx-auto mb-4"
         />
-        <h1 className="flex flex-col text-left text-4xl">
+        <h1 className="flex flex-col text-4xl text-center">
           <span className="">SMART FEATURES BUILT</span> FOR THE WAY LAWYYERS
           WORK
         </h1>

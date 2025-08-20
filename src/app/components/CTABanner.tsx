@@ -11,8 +11,14 @@ export default function CTABanner() {
   ];
 
   return (
-    <div className="w-full  text-white flex flex-col p-8">
-      <div className="flex flex-col gap-4 w-full my-4 text-center ">
+    <div className="w-full  text-white flex flex-col p-8 h-screen">
+      <div
+        data-scroll
+        data-scroll-class="is-in"
+        data-scroll-speed="0.03"
+        data-scroll-repeat
+        className="flex flex-col gap-4 w-full my-4 text-center show"
+      >
         <Image
           src="/outlook.png"
           alt="Lawbox Email Plugin"
@@ -20,11 +26,23 @@ export default function CTABanner() {
           height={200}
           className="mx-auto inset-0 [filter:drop-shadow(0_0_20px_#FF5E00)]"
         />
-        <h3 className="text-4xl uppercase tracking-widest ]">
+        <h3
+          data-scroll
+          data-scroll-class="is-in"
+          data-scroll-speed="0.05"
+          data-scroll-repeat
+          className="text-4xl uppercase tracking-widest show"
+        >
           Revolutionize Your Law Firm's Inbox
           <br />— Securely and Efficiently
         </h3>
-        <p className="text-base mt-[2%] px-80">
+        <p
+          data-scroll
+          data-scroll-class="is-in"
+          data-scroll-speed="0.08"
+          data-scroll-repeat
+          className="text-base mt-[2%] px-80 show"
+        >
           Transform the way your firm manages communication. Lawbox streamlines
           email organization, enhances security, and ensures you never miss
           critical case details. Say goodbye to inbox chaos and hello to

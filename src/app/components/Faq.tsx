@@ -27,7 +27,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="w-full text-white p-8">
+    <div className="w-full text-white p-8 z-50">
       <h2 className="text-4xl mt-[8%] mb-[4%] text-center">
         Frequently Asked Questions
       </h2>
@@ -35,13 +35,13 @@ export default function FAQ() {
         {faqs.map((faq, index) => (
           <div key={index} className="py-4">
             <button
-              className="w-full flex justify-start items-center text-left"
+              className="w-full flex justify-start items-center text-left cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
               <span className="text-2xl font-bold cursor-pointer text-[#FF5E00] mr-6">
                 {openIndex === index ? "−" : "+"}
               </span>
-              <span className="text-2xl font-medium">{faq.question}</span>
+              <span className="text-lg font-medium">{faq.question}</span>
             </button>
             {openIndex === index && (
               <p className="mt-2 text-gray-300 ml-10">{faq.answer}</p>

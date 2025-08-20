@@ -3,27 +3,40 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="w-full min-h-[75vh] text-white flex justify-between p-8 ">
-      <div className="bg-black [filter:drop-shadow(0_0_20px_#FF5E00)] max-w-7xl mx-auto rounded-2xl flex shadow-2xl">
+    <div className="w-full min-h-[75vh] text-white flex justify-between p-4 ">
+      <div className="  max-w-7xl mx-auto rounded-2xl flex ">
         <div className="flex flex-col justify-center gap-4 ml-36">
-          <h3 className="text-4xl tracking-widest w-1/2">
+          <h3
+            data-scroll
+            data-scroll-speed="0.08"
+            data-scroll-repeat
+            data-scroll-class="is-in"
+            className="text-4xl tracking-widest w-3/4 show"
+          >
             DRIVEN BY A NEED WE COULDN'T IGNORE
           </h3>
-          <p className="text-base mt-[2%] w-2/3">
-            We're a team of experienced software developers who noticed a major
-            gap in how legal professionals manage email. While we don't come
-            from law, we've built tools for complex, high-stakes industries —
-            and we saw how much time, clarity, and security lawyers were losing
-            to disorganized inboxes. Our mission: bring clarity, structure, and
-            security to legal email without disrupting the way lawyers work.
+          <p
+            data-scroll
+            data-scroll-speed="0.12"
+            data-scroll-repeat
+            data-scroll-class="is-in"
+            className="text-base mt-[2%] w-2/3 show"
+          >
+            We come from the world of complex, unforgiving software. The legal
+            inbox shouldn't be another adversary. We're here to give attorneys
+            time, clarity, and control—without rewiring their day.
           </p>
         </div>
         <Image
+          data-scroll
+          data-scroll-speed="0.12"
+          data-scroll-repeat
+          data-scroll-class="is-in"
           src="/logo-white.png"
           alt="lawbox"
           width={200}
           height={200}
-          className=" object-contain mr-36"
+          className=" object-contain mr-36 show"
         />
       </div>
     </div>
